@@ -1,0 +1,2 @@
+# MixFlutterApp
+Android原生和Flutter混合的App
