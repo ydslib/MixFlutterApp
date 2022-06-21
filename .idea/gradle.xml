@@ -13,6 +13,7 @@
             <option value="$PROJECT_DIR$/app" />
             <option value="$PROJECT_DIR$/flutter_module" />
             <option value="$PROJECT_DIR$/flutter_module/.android/Flutter" />
+            <option value="$USER_HOME$/Library/Android/flutter/.pub-cache/hosted/pub.dartlang.org/webview_flutter_android-2.8.11/android" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />

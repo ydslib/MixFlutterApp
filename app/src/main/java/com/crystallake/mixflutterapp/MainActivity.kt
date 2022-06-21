@@ -19,5 +19,7 @@ class MainActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
+//        mBinding?.dWebView?.loadUrl("localhost:8080/winit/web/web/index.html")
+
     }
 }
