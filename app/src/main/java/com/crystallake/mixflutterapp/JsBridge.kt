@@ -53,7 +53,17 @@ class JsBridge(val context: Context) {
                 "        </ul>\n" +
                 "        <p><a href='https://github.com'><font color=\"red\">websites</font></a></p>\n" +
                 "        <!--You can pretty much put any html in here!-->\n" +
-                "      </div>"
+                "      </div>"+
+                "<table border=\"1\">\n" +
+                "  <tr>\n" +
+                "    <th>月份ccccdd</th>\n" +
+                "    <th>存款</th>\n" +
+                "  </tr>\n" +
+                "  <tr>\n" +
+                "    <td>一月</td>\n" +
+                "    <td>1000 元</td>\n" +
+                "  </tr>\n" +
+                "</table>"
     }
 
 }
