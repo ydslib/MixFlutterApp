@@ -15,10 +15,6 @@ class MainActivity : AppCompatActivity() {
 
         mBinding = DataBindingUtil.setContentView(this, R.layout.activity_main)
 
-        mBinding?.btn?.setOnClickListener {
-            val intent = Intent(this@MainActivity, MyFlutterActivity::class.java)
-            startActivity(intent)
-        }
         mBinding?.dWebView?.settings?.let {
             it.userAgentString = it.userAgentString + "winit"
             it.allowUniversalAccessFromFileURLs = true
@@ -30,8 +26,11 @@ class MainActivity : AppCompatActivity() {
         }
         val map: HashMap<String, String> = HashMap<String, String>()
         map.put("test", "ddddd")
-        mBinding?.dWebView?.addJavascriptInterface(JsBridge(this),"test")
-        mBinding?.dWebView?.loadUrl("http://10.99.17.134:8080/web/index.html", map)
+        mBinding?.dWebView?.addJavascriptInterface(JsBridge(this),"searchData")
 
+
+        mBinding?.btn?.setOnClickListener {
+            mBinding?.dWebView?.loadUrl("http://10.99.17.134:8080/web/index.html")
+        }
     }
 }
